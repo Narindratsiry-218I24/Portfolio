@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narindra Tsiriniaina · Portfolio</title>
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- Fichier CSS externe -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVIGATION FIXE -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Narindra<span>.dev</span></div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+                <li><a href="#competences" class="nav-link">Compétences</a></li>
+                <li><a href="#statistiques" class="nav-link">Statistiques</a></li>
+                <li><a href="#formation" class="nav-link">Formation</a></li>
+                <li><a href="#projets" class="nav-link">Projets</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- SECTION ACCUEIL AVEC TEXTE MOTIVATION -->
+        <section id="accueil" class="section hero">
+            <div class="hero-content">
+                <div class="hero-main">
+                    <p class="hero-greeting fade-in">👋 Bonjour, je suis</p>
+                    <h1 class="fade-in">Narindra Tsiriniaina <span>Rakotondramnana</span></h1>
+                    
+                    <!-- Texte de motivation/passion -->
+                    <div class="hero-motivation fade-in">
+                        <p class="motivation-text">
+                            <i class="fas fa-quote-left"></i> 
+                            Passionné par le développement backend et les architectures robustes. 
+                            Je transforme des idées en solutions performantes avec Java, PHP et Python.
+                            <i class="fas fa-quote-right"></i>
+                        </p>
+                    </div>
+
+                    <!-- Badge Full Stack -->
+                    <div class="hero-fullstack-text fade-in">
+                        <span class="fullstack-badge"><i class="fas fa-code"></i> Full Stack Developer</span>
+                    </div>
+
+                    <!-- Statut étudiant -->
+                    <div class="hero-status-block fade-in">
+                        <span class="hero-badge"><i class="fas fa-laptop-code"></i> Étudiant en Licence</span>
+                    </div>
+
+                    <a href="#projets" class="btn-primary fade-in">Voir mes projets <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="hero-avatar fade-in">
+                    <i class="fas fa-user-astronaut"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION COMPÉTENCES -->
+        <section id="competences" class="section competences">
+            <div class="container">
+                <h2 class="section-title fade-in"><i class="fas fa-code"></i> Compétences techniques</h2>
+                <div class="skills-grid">
+                    <div class="skill-card fade-in">
+                        <h3><i class="fas fa-database"></i> Conception</h3>
+                        <ul>
+                            <li>MERISE II</li>
+                            <li>Modélisation BD</li>
+                            <li>UML</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card fade-in">
+                        <h3><i class="fas fa-desktop"></i> Desktop</h3>
+                        <ul>
+                            <li>Java (Swing, POO)</li>
+                            <li>C# (WinForms)</li>
+                            <li>Python Tkinter</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card fade-in">
+                        <h3><i class="fas fa-globe"></i> Développement web</h3>
+                        <ul>
+                            <li>HTML5 / CSS3 / Bootstrap</li>
+                            <li>JavaScript</li>
+                            <li>PHP</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card fade-in">
+                        <h3><i class="fas fa-server"></i> Backend & SGBD</h3>
+                        <ul>
+                            <li>MySQL</li>
+                            <li>Architecture MVC</li>
+                            <li>API (en cours)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION STATISTIQUES AVEC LIENS DE CERTIFICATION -->
+        <section id="statistiques" class="section statistiques">
+            <div class="container">
+                <h2 class="section-title fade-in"><i class="fas fa-chart-line"></i> Quelques chiffres</h2>
+                <div class="stats-grid">
+                    <div class="stat-card fade-in">
+                        <i class="fas fa-code-branch"></i>
+                        <div class="stat-number" data-target="8">0</div>
+                        <p>Projets académiques</p>
+                    </div>
+                    <div class="stat-card fade-in">
+                        <i class="fas fa-clock"></i>
+                        <div class="stat-number" data-target="2">0</div>
+                        <p>Années d'expérience</p>
+                    </div>
+                    <div class="stat-card fade-in certification-card">
+                        <i class="fas fa-certificate"></i>
+                        <div class="stat-number" data-target="3">0</div>
+                        <p>Certifications</p>
+                        <!-- Liens de certification -->
+                        <div class="certification-links">
+                            <a href="#" class="cert-link" target="_blank"><i class="fab fa-google"></i> Google</a>
+                            <a href="#" class="cert-link" target="_blank"><i class="fab fa-microsoft"></i> Microsoft</a>
+                            <a href="#" class="cert-link" target="_blank"><i class="fas fa-shield-alt"></i> Sécurité</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION FORMATION -->
+        <section id="formation" class="section formation">
+            <div class="container">
+                <h2 class="section-title fade-in"><i class="fas fa-graduation-cap"></i> Formation</h2>
+                <div class="formation-grid">
+                    <div class="formation-card fade-in">
+                        <div class="formation-year">2024 - 2025</div>
+                        <h3>Deuxième année de Licence</h3>
+                        <p class="formation-school">École de Management et d'Innovation Technologique (EMI), Fianarantsoa</p>
+                        <p class="formation-desc">Spécialisation en développement d'applications Intranet/Internet.</p>
+                    </div>
+                    <div class="formation-card fade-in">
+                        <div class="formation-year">2023 - 2024</div>
+                        <h3>Première année de Licence</h3>
+                        <p class="formation-school">École de Management et d'Innovation Technologique (EMI), Fianarantsoa</p>
+                        <p class="formation-desc">Tronc commun en management et technologies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION PROJETS -->
+        <section id="projets" class="section projets">
+            <div class="container">
+                <h2 class="section-title fade-in"><i class="fas fa-laptop-code"></i> Projets académiques</h2>
+                <div class="projets-grid">
+                    <!-- Projet 1 -->
+                    <div class="projet-card fade-in">
+                        <div class="card-header">
+                            <h3>Gestion bancaire</h3>
+                            <span class="date">Mai 2025</span>
+                        </div>
+                        <p class="techs">Java, Swing, MySQL, POO</p>
+                        <ul>
+                            <li>Comptes, dépôt/retrait, historique</li>
+                            <li>Impression reçu, gestion exceptions</li>
+                        </ul>
+                    </div>
+                    <!-- Projet 2 -->
+                    <div class="projet-card fade-in">
+                        <div class="card-header">
+                            <h3>Cabinet d'avocat</h3>
+                            <span class="date">Mars 2025</span>
+                        </div>
+                        <p class="techs">C#, WinForms, .NET</p>
+                        <ul>
+                            <li>Dossiers clients, rendez-vous</li>
+                            <li>Facturation</li>
+                        </ul>
+                    </div>
+                    <!-- Projet 3 -->
+                    <div class="projet-card fade-in">
+                        <div class="card-header">
+                            <h3>Site web avocat</h3>
+                            <span class="date">Avril 2025</span>
+                        </div>
+                        <p class="techs">PHP, MySQL, HTML/CSS, JS</p>
+                        <ul>
+                            <li>CRUD complet, archives, graphiques</li>
+                            <li>Formulaires dynamiques</li>
+                        </ul>
+                    </div>
+                    <!-- Projet 4 -->
+                    <div class="projet-card fade-in">
+                        <div class="card-header">
+                            <h3>Recherche & conversion</h3>
+                            <span class="date">Août 2024</span>
+                        </div>
+                        <p class="techs">Python, Tkinter</p>
+                        <ul>
+                            <li>Recherche appartenance (Fianar)</li>
+                            <li>Convertisseur bases numération</li>
+                        </ul>
+                    </div>
+                    <!-- Projet 5 -->
+                    <div class="projet-card fade-in">
+                        <div class="card-header">
+                            <h3>Cabinet avocat (Access)</h3>
+                            <span class="date">Mars 2024</span>
+                        </div>
+                        <p class="techs">MS Access, VBA</p>
+                        <ul>
+                            <li>Analyse et création d'application</li>
+                            <li>Gestion de dossiers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION CONTACT AVEC RÉSEAUX ACTIFS -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <h2 class="section-title fade-in"><i class="fas fa-address-card"></i> Contact</h2>
+                <div class="contact-flex fade-in">
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone-alt"></i> +261 38 38 466 60</p>
+                        <p><i class="fas fa-envelope"></i> narindraTsiry18@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> III x 79 Anosibe Ouest II, Tana IV</p>
+                    </div>
+                    <div class="contact-social">
+                        <p>Disponible pour stage / alternance</p>
+                        <div class="social-links">
+                            <!-- Liens réels à remplacer -->
+                            <a href="https://github.com/Narindratsiry-218I24" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/narindra-tsiriniaina-698b90303/" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Narindra Tsiriniaina Rakotondramnana · portfolio évolutif</p>
+    </footer>
+
+    <!-- Script amélioré pour animations et compteur -->
+    <script>
+        // === MENU BURGER ===
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                if (targetSection) {
+                    window.scrollTo({
+                        top: targetSection.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                }
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // === ANIMATION AU SCROLL AMÉLIORÉE (fade-in + zoom) ===
+        const animatedElements = document.querySelectorAll('.fade-in');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    // Animation supplémentaire pour les cartes
+                    if (entry.target.classList.contains('skill-card') || 
+                        entry.target.classList.contains('projet-card') ||
+                        entry.target.classList.contains('formation-card') ||
+                        entry.target.classList.contains('stat-card')) {
+                        entry.target.style.transition = 'all 0.8s cubic-bezier(0.2, 0.9, 0.3, 1)';
+                    }
+                }
+            });
+        }, { 
+            threshold: 0.15, 
+            rootMargin: '0px 0px -30px 0px' 
+        });
+
+        animatedElements.forEach(el => observer.observe(el));
+
+        // === SURBRILLANCE DU MENU ===
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 80;
+                if (scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // === COMPTEUR STATISTIQUES AVEC ANIMATION ===
+        const statNumbers = document.querySelectorAll('.stat-number');
+        let counted = false;
+
+        const countObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !counted) {
+                    counted = true;
+                    statNumbers.forEach(stat => {
+                        const target = parseInt(stat.getAttribute('data-target'));
+                        let current = 0;
+                        const increment = target / 40; // Plus rapide et fluide
+                        const timer = setInterval(() => {
+                            current += increment;
+                            if (current >= target) {
+                                stat.innerText = target;
+                                clearInterval(timer);
+                            } else {
+                                stat.innerText = Math.floor(current);
+                            }
+                        }, 20);
+                    });
+                }
+            });
+        }, { threshold: 0.5 });
+
+        if (statNumbers.length > 0) {
+            countObserver.observe(document.querySelector('#statistiques'));
+        }
+    </script>
+</body>
+</html>
