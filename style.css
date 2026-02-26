@@ -333,19 +333,39 @@ body::before {
     box-shadow: 0 20px 35px -8px #3a8fc9;
 }
 
-.hero-avatar i {
-    font-size: 18rem;
-    background: linear-gradient(145deg, #7ac7f5, #3a8fc9);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    transition: all 0.5s ease;
-    filter: drop-shadow(0 20px 25px rgba(58, 143, 201, 0.3));
+/* ===== AMÉLIORATION PHOTO ===== */
+.hero-avatar {
+    flex: 1 1 300px;
+    text-align: center;
 }
 
-.hero-avatar i:hover {
-    transform: rotate(8deg) scale(1.1);
-    filter: drop-shadow(0 30px 35px #3a8fc9);
+.sary {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(122, 199, 245, 0.5);
+    box-shadow: 0 20px 40px rgba(58, 143, 201, 0.3);
+    transition: all 0.5s ease;
+    animation: float 6s ease-in-out infinite;
+}
+
+.sary:hover {
+    transform: scale(1.05);
+    border-color: #7ac7f5;
+    box-shadow: 0 30px 60px #3a8fc9;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 /* ===== COMPÉTENCES ===== */
@@ -356,7 +376,7 @@ body::before {
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
 }
 
@@ -368,6 +388,8 @@ body::before {
     border: 1px solid rgba(122, 199, 245, 0.2);
     transition: all 0.4s ease;
     box-shadow: 0 15px 35px -12px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
 }
 
 .skill-card:hover {
@@ -392,6 +414,7 @@ body::before {
 
 .skill-card ul {
     list-style: none;
+    margin-bottom: 1.5rem;
 }
 
 .skill-card li {
@@ -411,6 +434,51 @@ body::before {
     font-size: 1.2rem;
 }
 
+/* ===== COMPÉTENCES AVEC POURCENTAGES ===== */
+.skill-percentages {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(122, 199, 245, 0.2);
+}
+
+.skill-item {
+    margin-bottom: 1rem;
+}
+
+.skill-item span {
+    display: block;
+    margin-bottom: 0.3rem;
+    color: #b0d0f0;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: rgba(58, 143, 201, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress {
+    height: 100%;
+    background: linear-gradient(90deg, #3a8fc9, #7ac7f5);
+    border-radius: 10px;
+    position: relative;
+    width: 0;
+    transition: width 1.5s cubic-bezier(0.2, 0.9, 0.3, 1);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 5px;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
 /* ===== STATISTIQUES ===== */
 .statistiques {
     background: rgba(10, 30, 45, 0.4);
@@ -419,9 +487,9 @@ body::before {
 
 .stats-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 2.5rem;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -581,7 +649,7 @@ body::before {
 
 .projets-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 2rem;
 }
 
@@ -756,29 +824,46 @@ footer {
         flex-direction: column-reverse;
         text-align: center;
     }
+    
+    .hero-main {
+        text-align: center;
+    }
+    
+    .hero-avatar {
+        margin-bottom: 2rem;
+    }
+    
+    .sary {
+        width: 280px;
+        height: 280px;
+    }
+    
     .hero-main h1 {
         font-size: 3rem;
     }
+    
     .hero-main h1 span {
         font-size: 2.5rem;
     }
+    
     .hero-status-block {
         justify-content: center;
     }
+    
     .hero-motivation {
         text-align: center;
     }
-    .hero-avatar i {
-        font-size: 12rem;
-    }
+    
     .contact-flex {
         flex-direction: column;
         text-align: center;
         padding: 2rem;
     }
+    
     .contact-info p {
         justify-content: center;
     }
+    
     .social-links {
         justify-content: center;
     }
@@ -799,44 +884,192 @@ footer {
         transition: 0.3s;
         border-bottom: 1px solid rgba(122, 199, 245, 0.2);
     }
+    
     .nav-menu.active {
         left: 0;
     }
+    
     .hamburger {
         display: flex;
     }
+    
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
+    
     .hamburger.active .bar:nth-child(1) {
         transform: rotate(45deg) translate(8px, 6px);
     }
+    
     .hamburger.active .bar:nth-child(3) {
         transform: rotate(-45deg) translate(7px, -6px);
     }
+    
     .section-title {
         font-size: 2.2rem;
     }
 }
 
 @media (max-width: 480px) {
+    .sary {
+        width: 220px;
+        height: 220px;
+    }
+    
     .hero-main h1 {
         font-size: 2.2rem;
     }
+    
     .hero-main h1 span {
         font-size: 1.9rem;
     }
+    
     .skills-grid, .formation-grid, .projets-grid, .stats-grid {
         grid-template-columns: 1fr;
     }
+    
     .btn-primary {
         padding: 0.8rem 2rem;
     }
+    
     .stat-number {
         font-size: 3rem;
     }
+    
     .motivation-text {
         font-size: 1.1rem;
         padding: 1.2rem;
+    }
+    
+    .contact-flex {
+        padding: 1.5rem;
+    }
+}
+
+/* ===== NOUVELLE DISPOSITION ACCUEIL ===== */
+.hero-content {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-avatar-top {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.hero-main-bottom {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero-avatar-top .sary {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(122, 199, 245, 0.5);
+    box-shadow: 0 20px 40px rgba(58, 143, 201, 0.3);
+    transition: all 0.5s ease;
+    animation: float 6s ease-in-out infinite;
+}
+
+.hero-avatar-top .sary:hover {
+    transform: scale(1.05);
+    border-color: #7ac7f5;
+    box-shadow: 0 30px 60px #3a8fc9;
+}
+
+.hero-main-bottom h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    background: linear-gradient(145deg, #ffffff, #ccddf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+    letter-spacing: -1px;
+}
+
+.hero-main-bottom h1 span {
+    background: linear-gradient(145deg, #7ac7f5, #3a8fc9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 3rem;
+    display: block;
+}
+
+.hero-greeting {
+    font-size: 1.5rem;
+    font-weight: 500;
+    background: linear-gradient(145deg, #7ac7f5, #a0d0ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.5rem;
+}
+
+.hero-status-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem 1.2rem;
+    margin: 1rem 0 2rem;
+}
+
+/* Animation flottante pour la photo */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-main-bottom h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-main-bottom h1 span {
+        font-size: 2.2rem;
+    }
+    
+    .hero-avatar-top .sary {
+        width: 220px;
+        height: 220px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-main-bottom h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-main-bottom h1 span {
+        font-size: 1.8rem;
+    }
+    
+    .hero-avatar-top .sary {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .motivation-text {
+        font-size: 1rem;
+        padding: 1rem;
     }
 }

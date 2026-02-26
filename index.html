@@ -36,41 +36,43 @@
 
     <main>
         <!-- SECTION ACCUEIL AVEC TEXTE MOTIVATION -->
-        <section id="accueil" class="section hero">
-            <div class="hero-content">
-                <div class="hero-main">
-                    <p class="hero-greeting fade-in">👋 Bonjour, je suis</p>
-                    <h1 class="fade-in">Narindra Tsiriniaina <span>Rakotondramnana</span></h1>
-                    
-                    <!-- Texte de motivation/passion -->
-                    <div class="hero-motivation fade-in">
-                        <p class="motivation-text">
-                            <i class="fas fa-quote-left"></i> 
-                            Passionné par le développement backend et les architectures robustes. 
-                            Je transforme des idées en solutions performantes avec Java, PHP et Python.
-                            <i class="fas fa-quote-right"></i>
-                        </p>
-                    </div>
-
-                    <!-- Badge Full Stack -->
-                    <div class="hero-fullstack-text fade-in">
-                        <span class="fullstack-badge"><i class="fas fa-code"></i> Full Stack Developer</span>
-                    </div>
-
-                    <!-- Statut étudiant -->
-                    <div class="hero-status-block fade-in">
-                        <span class="hero-badge"><i class="fas fa-laptop-code"></i> Étudiant en Licence</span>
-                    </div>
-
-                    <a href="#projets" class="btn-primary fade-in">Voir mes projets <i class="fas fa-arrow-right"></i></a>
-                </div>
-
-                <div class="hero-avatar fade-in">
-                    <i class="fas fa-user-astronaut"></i>
-                </div>
+        <!-- SECTION ACCUEIL AVEC PHOTO EN HAUT ET PRESENTATION EN BAS -->
+<section id="accueil" class="section hero">
+    <div class="hero-content">
+        <!-- Photo en HAUT -->
+        <div class="hero-avatar-top fade-in">
+            <img class="sary" src="sary.jpg" alt="Narindra Tsiriniaina">
+        </div>
+        
+        <!-- Présentation en BAS -->
+        <div class="hero-main-bottom fade-in">
+            <h1 class="fade-in">Narindra Tsiriniaina <span>Rakotondramnana</span></h1>
+            
+         
+            <div class="hero-motivation fade-in">
+                <p class="motivation-text">
+                    <i class="fas fa-quote-left"></i> 
+                    Passionné par le développement backend et les architectures robustes. 
+                    Je transforme des idées en solutions performantes avec Java, PHP et Python.
+                    <i class="fas fa-quote-right"></i>
+                </p>
             </div>
-        </section>
 
+            <!-- Badge Full Stack -->
+            <div class="hero-fullstack-text fade-in">
+                <span class="fullstack-badge"><i class="fas fa-code"></i> Full Stack Developer</span>
+            </div>
+
+            <!-- Statut étudiant -->
+            <div class="hero-status-block fade-in">
+                <span class="hero-badge"><i class="fas fa-laptop-code"></i> Étudiant en Licence</span>
+                <span class="hero-badge"><i class="fas fa-map-marker-alt"></i> Fianarantsoa</span>
+            </div>
+
+            <a href="#projets" class="btn-primary fade-in">Voir mes projets <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+</section>
         <!-- SECTION COMPÉTENCES -->
         <section id="competences" class="section competences">
             <div class="container">
@@ -78,35 +80,111 @@
                 <div class="skills-grid">
                     <div class="skill-card fade-in">
                         <h3><i class="fas fa-database"></i> Conception</h3>
-                        <ul>
-                            <li>MERISE II</li>
-                            <li>Modélisation BD</li>
-                            <li>UML</li>
-                        </ul>
+                      
+                        <div class="skill-percentages">
+                            <div class="skill-item">
+                                <span>MERISE</span>
+                                <div class="progress-bar">
+                                    <div class="progress" data-percent="85">0%</div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>Modélisation</span>
+                                <div class="progress-bar">
+                                    <div class="progress" data-percent="80">0%</div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>UML</span>
+                                <div class="progress-bar">
+                                    <div class="progress" data-percent="75">0%</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="skill-card fade-in">
                         <h3><i class="fas fa-desktop"></i> Desktop</h3>
-                        <ul>
-                            <li>Java (Swing, POO)</li>
-                            <li>C# (WinForms)</li>
-                            <li>Python Tkinter</li>
-                        </ul>
+                       
+                        <div class="skill-percentages">
+                            <div class="skill-item">
+                                <span>Java</span>
+                                <div class="progress-bar">
+                                    <div class="progress" data-percent="85">0%</div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>C#</span>
+                                <div class="progress-bar">
+                                    <div class="progress" data-percent="75">0%</div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>Python</span>
+                                <div class="progress-bar">
+                                    <div class="progress" data-percent="70">0%</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="skill-card fade-in">
                         <h3><i class="fas fa-globe"></i> Développement web</h3>
-                        <ul>
-                            <li>HTML5 / CSS3 / Bootstrap</li>
-                            <li>JavaScript</li>
-                            <li>PHP</li>
-                        </ul>
+                       
+                        <div class="skill-percentages">
+                            <div class="skill-item">
+                                <span>HTML/CSS</span>
+                                <div class="progress-bar">
+                                    <div class="progress" data-percent="90">0%</div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>JavaScript</span>
+                                <div class="progress-bar">
+                                    <div class="progress" data-percent="75">0%</div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>PHP</span>
+                                <div class="progress-bar">
+                                    <div class="progress" data-percent="80">0%</div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>React</span>
+                                <div class="progress-bar">
+                                    <div class="progress" data-percent="70">0%</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="skill-card fade-in">
                         <h3><i class="fas fa-server"></i> Backend & SGBD</h3>
-                        <ul>
-                            <li>MySQL</li>
-                            <li>Architecture MVC</li>
-                            <li>API (en cours)</li>
-                        </ul>
+                       
+                        <div class="skill-percentages">
+                            <div class="skill-item">
+                                <span>MySQL</span>
+                                <div class="progress-bar">
+                                    <div class="progress" data-percent="85">0%</div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>PostgreSQL</span>
+                                <div class="progress-bar">
+                                    <div class="progress" data-percent="70">0%</div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>MVC</span>
+                                <div class="progress-bar">
+                                    <div class="progress" data-percent="80">0%</div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>API REST</span>
+                                <div class="progress-bar">
+                                    <div class="progress" data-percent="65">0%</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -119,24 +197,25 @@
                 <div class="stats-grid">
                     <div class="stat-card fade-in">
                         <i class="fas fa-code-branch"></i>
-                        <div class="stat-number" data-target="8">0</div>
+                        <div class="stat-number" data-target="5">0</div>
                         <p>Projets académiques</p>
                     </div>
                     <div class="stat-card fade-in">
+                        <i class="fas fa-briefcase"></i>
+                        <div class="stat-number" data-target="1">0</div>
+                        <p>Projets professionnels</p>
+                    </div>
+                    <div class="stat-card fade-in">
                         <i class="fas fa-clock"></i>
-                        <div class="stat-number" data-target="2">0</div>
+                        <div class="stat-number" data-target="1">0</div>
                         <p>Années d'expérience</p>
                     </div>
                     <div class="stat-card fade-in certification-card">
                         <i class="fas fa-certificate"></i>
-                        <div class="stat-number" data-target="3">0</div>
+                        <div class="stat-number" data-target="1">0</div>
                         <p>Certifications</p>
-                        <!-- Liens de certification -->
-                        <div class="certification-links">
-                            <a href="#" class="cert-link" target="_blank"><i class="fab fa-google"></i> Google</a>
-                            <a href="#" class="cert-link" target="_blank"><i class="fab fa-microsoft"></i> Microsoft</a>
-                            <a href="#" class="cert-link" target="_blank"><i class="fas fa-shield-alt"></i> Sécurité</a>
-                        </div>
+                      
+                   
                     </div>
                 </div>
             </div>
@@ -166,9 +245,9 @@
         <!-- SECTION PROJETS -->
         <section id="projets" class="section projets">
             <div class="container">
-                <h2 class="section-title fade-in"><i class="fas fa-laptop-code"></i> Projets académiques</h2>
+                <h2 class="section-title fade-in"><i class="fas fa-laptop-code"></i> Projets académiques & professionnels</h2>
                 <div class="projets-grid">
-                    <!-- Projet 1 -->
+                    <!-- Projet 1 - Gestion bancaire (Java) -->
                     <div class="projet-card fade-in">
                         <div class="card-header">
                             <h3>Gestion bancaire</h3>
@@ -180,7 +259,7 @@
                             <li>Impression reçu, gestion exceptions</li>
                         </ul>
                     </div>
-                    <!-- Projet 2 -->
+                    <!-- Projet 2 - Cabinet d'avocat (C#) -->
                     <div class="projet-card fade-in">
                         <div class="card-header">
                             <h3>Cabinet d'avocat</h3>
@@ -192,7 +271,7 @@
                             <li>Facturation</li>
                         </ul>
                     </div>
-                    <!-- Projet 3 -->
+                    <!-- Projet 3 - Site web avocat -->
                     <div class="projet-card fade-in">
                         <div class="card-header">
                             <h3>Site web avocat</h3>
@@ -204,28 +283,43 @@
                             <li>Formulaires dynamiques</li>
                         </ul>
                     </div>
-                    <!-- Projet 4 -->
+                    <!-- Projet 4 - Gestion d'Inventaire IT -->
                     <div class="projet-card fade-in">
                         <div class="card-header">
-                            <h3>Recherche & conversion</h3>
-                            <span class="date">Août 2024</span>
+                            <h3>Gestion d'Inventaire IT</h3>
+                            <span class="date">Juin 2025</span>
                         </div>
-                        <p class="techs">Python, Tkinter</p>
+                        <p class="techs">React, Express.js, MongoDB</p>
                         <ul>
-                            <li>Recherche appartenance (Fianar)</li>
-                            <li>Convertisseur bases numération</li>
+                            <li>Inventaire matériel et logiciel</li>
+                            <li>Attribution des équipements</li>
+                            <li>Tableau de bord en temps réel</li>
                         </ul>
                     </div>
-                    <!-- Projet 5 -->
+                    <!-- Projet 5 - Plateforme suivi étudiant -->
                     <div class="projet-card fade-in">
                         <div class="card-header">
-                            <h3>Cabinet avocat (Access)</h3>
-                            <span class="date">Mars 2024</span>
+                            <h3>Suivi étudiant</h3>
+                            <span class="date">Juillet 2025</span>
                         </div>
-                        <p class="techs">MS Access, VBA</p>
+                        <p class="techs">Flutter, PostgreSQL</p>
                         <ul>
-                            <li>Analyse et création d'application</li>
-                            <li>Gestion de dossiers</li>
+                            <li>Suivi des notes et présences</li>
+                            <li>Communication professeur-étudiant</li>
+                            <li>Statistiques de progression</li>
+                        </ul>
+                    </div>
+                    <!-- Projet 6 - Gestion compte bancaire Spring Boot -->
+                    <div class="projet-card fade-in">
+                        <div class="card-header">
+                            <h3>Gestion compte bancaire</h3>
+                            <span class="date">Août 2025</span>
+                        </div>
+                        <p class="techs">Spring Boot, React, Bootstrap</p>
+                        <ul>
+                            <li>API RESTful avec Spring Security</li>
+                            <li>Frontend React avec Bootstrap</li>
+                            <li>Transactions et relevés bancaires</li>
                         </ul>
                     </div>
                 </div>
@@ -245,7 +339,6 @@
                     <div class="contact-social">
                         <p>Disponible pour stage / alternance</p>
                         <div class="social-links">
-                            <!-- Liens réels à remplacer -->
                             <a href="https://github.com/Narindratsiry-218I24" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
                             <a href="https://www.linkedin.com/in/narindra-tsiriniaina-698b90303/" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
                         </div>
@@ -286,30 +379,20 @@
             });
         });
 
-        // === ANIMATION AU SCROLL AMÉLIORÉE (fade-in + zoom) ===
+        // === ANIMATION AU SCROLL AMÉLIORÉE ===
         const animatedElements = document.querySelectorAll('.fade-in');
 
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('visible');
-                    // Animation supplémentaire pour les cartes
-                    if (entry.target.classList.contains('skill-card') || 
-                        entry.target.classList.contains('projet-card') ||
-                        entry.target.classList.contains('formation-card') ||
-                        entry.target.classList.contains('stat-card')) {
-                        entry.target.style.transition = 'all 0.8s cubic-bezier(0.2, 0.9, 0.3, 1)';
-                    }
                 }
             });
-        }, { 
-            threshold: 0.15, 
-            rootMargin: '0px 0px -30px 0px' 
-        });
+        }, { threshold: 0.15, rootMargin: '0px 0px -30px 0px' });
 
         animatedElements.forEach(el => observer.observe(el));
 
-        // === SURBRILLANCE DU MENU ===
+        // === SURVEILLANCE DU MENU ===
         window.addEventListener('scroll', () => {
             let current = '';
             const sections = document.querySelectorAll('section');
@@ -327,7 +410,7 @@
             });
         });
 
-        // === COMPTEUR STATISTIQUES AVEC ANIMATION ===
+        // === COMPTEUR STATISTIQUES ===
         const statNumbers = document.querySelectorAll('.stat-number');
         let counted = false;
 
@@ -338,7 +421,7 @@
                     statNumbers.forEach(stat => {
                         const target = parseInt(stat.getAttribute('data-target'));
                         let current = 0;
-                        const increment = target / 40; // Plus rapide et fluide
+                        const increment = target / 40;
                         const timer = setInterval(() => {
                             current += increment;
                             if (current >= target) {
@@ -356,6 +439,26 @@
         if (statNumbers.length > 0) {
             countObserver.observe(document.querySelector('#statistiques'));
         }
+
+        // === ANIMATION DES BARRES DE PROGRESSION ===
+        const skillCards = document.querySelectorAll('.skill-card');
+
+        const skillObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const card = entry.target;
+                    const progressBars = card.querySelectorAll('.progress');
+                    
+                    progressBars.forEach(bar => {
+                        const percent = bar.getAttribute('data-percent');
+                        bar.style.width = percent + '%';
+                        bar.textContent = percent + '%';
+                    });
+                }
+            });
+        }, { threshold: 0.3 });
+
+        skillCards.forEach(card => skillObserver.observe(card));
     </script>
 </body>
 </html>
