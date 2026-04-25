@@ -3,25 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Narindra Tsiriniaina · Portfolio</title>
-    <!-- Font Awesome 6 -->
+    <title>Narindra Tsiriniaina · Portfolio Full Stack</title>
+    <!-- Font Awesome 6 (Flaticon style) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Google Fonts Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <!-- Fichier CSS externe -->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,500;14..32,600;14..32,700;14..32,800&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- NAVIGATION FIXE -->
+    <!-- NAVIGATION -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">Narindra<span>.dev</span></div>
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="#accueil" class="nav-link active">Accueil</a></li>
                 <li><a href="#competences" class="nav-link">Compétences</a></li>
-                <li><a href="#statistiques" class="nav-link">Statistiques</a></li>
+                <li><a href="#statistiques" class="nav-link">Chiffres</a></li>
                 <li><a href="#formation" class="nav-link">Formation</a></li>
                 <li><a href="#projets" class="nav-link">Projets</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -35,430 +32,174 @@
     </nav>
 
     <main>
-        <!-- SECTION ACCUEIL AVEC TEXTE MOTIVATION -->
-        <!-- SECTION ACCUEIL AVEC PHOTO EN HAUT ET PRESENTATION EN BAS -->
-<section id="accueil" class="section hero">
-    <div class="hero-content">
-        <!-- Photo en HAUT -->
-        <div class="hero-avatar-top fade-in">
-            <img class="sary" src="sary.jpeg" alt="Narindra Tsiriniaina">
-        </div>
-        
-        <!-- Présentation en BAS -->
-        <div class="hero-main-bottom fade-in">
-            <h1 class="fade-in">Narindra Tsiriniaina <span>Rakotondramnana</span></h1>
-            
-         
-            <div class="hero-motivation fade-in">
-                <p class="motivation-text">
-                    <i class="fas fa-quote-left"></i> 
-                    Passionné par le développement backend et les architectures robustes. 
-                    Je transforme des idées en solutions performantes avec Java, PHP et Python.
-                    <i class="fas fa-quote-right"></i>
-                </p>
+        <!-- SECTION ACCUEIL LANDING PAGE -->
+        <section id="accueil" class="section hero">
+            <div class="hero-content">
+                <div class="hero-avatar fade-in">
+                    <div class="avatar-circle">
+                        <img class="profile-img" src="sary.jpeg" alt="Narindra Tsiriniaina">
+                    </div>
+                </div>
+                <div class="hero-text fade-in">
+                    <h1>Narindra <span>Tsiriniaina</span><br>Rakotondramnana</h1>
+                    <div class="hero-badges">
+                        <span class="badge"><i class="fas fa-code"></i> Full Stack Developer</span>
+                        <span class="badge"><i class="fas fa-laptop-code"></i> Étudiant Licence</span>
+                        <span class="badge"><i class="fas fa-map-marker-alt"></i> Fianarantsoa</span>
+                    </div>
+                    <div class="hero-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Passionné par les architectures robustes, backend scalable et solutions full stack. Je transforme les idées en applications performantes.</p>
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <a href="#projets" class="btn-primary">Explorer mes projets <i class="fas fa-arrow-right"></i></a>
+                </div>
             </div>
+        </section>
 
-            <!-- Badge Full Stack -->
-            <div class="hero-fullstack-text fade-in">
-                <span class="fullstack-badge"><i class="fas fa-code"></i> Full Stack Developer</span>
-            </div>
-
-            <!-- Statut étudiant -->
-            <div class="hero-status-block fade-in">
-                <span class="hero-badge"><i class="fas fa-laptop-code"></i> Étudiant en Licence</span>
-                <span class="hero-badge"><i class="fas fa-map-marker-alt"></i> Fianarantsoa</span>
-            </div>
-
-            <a href="#projets" class="btn-primary fade-in">Voir mes projets <i class="fas fa-arrow-right"></i></a>
-        </div>
-    </div>
-</section>
-        <!-- SECTION COMPÉTENCES -->
+        <!-- COMPÉTENCES -->
         <section id="competences" class="section competences">
             <div class="container">
-                <h2 class="section-title fade-in"><i class="fas fa-code"></i> Compétences techniques</h2>
+                <h2 class="section-title fade-in"><i class="fas fa-cogs"></i> Compétences techniques</h2>
                 <div class="skills-grid">
                     <div class="skill-card fade-in">
-                        <h3><i class="fas fa-database"></i> Conception</h3>
-                      
-                        <div class="skill-percentages">
-                            <div class="skill-item">
-                                <span>MERISE</span>
-                                <div class="progress-bar">
-                                    <div class="progress" data-percent="85">0%</div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <span>Modélisation</span>
-                                <div class="progress-bar">
-                                    <div class="progress" data-percent="80">0%</div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <span>UML</span>
-                                <div class="progress-bar">
-                                    <div class="progress" data-percent="75">0%</div>
-                                </div>
-                            </div>
-                        </div>
+                        <h3><i class="fas fa-database"></i> Conception & Modélisation</h3>
+                        <div class="skill-item"><span>MERISE / UML</span><div class="progress-bar"><div class="progress" data-percent="85"></div></div></div>
+                        <div class="skill-item"><span>Modélisation BDD</span><div class="progress-bar"><div class="progress" data-percent="80"></div></div></div>
                     </div>
                     <div class="skill-card fade-in">
-                        <h3><i class="fas fa-desktop"></i> Desktop</h3>
-                       
-                        <div class="skill-percentages">
-                            <div class="skill-item">
-                                <span>Java</span>
-                                <div class="progress-bar">
-                                    <div class="progress" data-percent="85">0%</div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <span>C#</span>
-                                <div class="progress-bar">
-                                    <div class="progress" data-percent="75">0%</div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <span>Python</span>
-                                <div class="progress-bar">
-                                    <div class="progress" data-percent="70">0%</div>
-                                </div>
-                            </div>
-                        </div>
+                        <h3><i class="fab fa-java"></i> Backend & API</h3>
+                        <div class="skill-item"><span>Java (Spring Boot)</span><div class="progress-bar"><div class="progress" data-percent="85"></div></div></div>
+                        <div class="skill-item"><span>PHP / Laravel</span><div class="progress-bar"><div class="progress" data-percent="80"></div></div></div>
+                        <div class="skill-item"><span>Python / Flask</span><div class="progress-bar"><div class="progress" data-percent="70"></div></div></div>
+                        <div class="skill-item"><span>API REST</span><div class="progress-bar"><div class="progress" data-percent="75"></div></div></div>
                     </div>
                     <div class="skill-card fade-in">
-                        <h3><i class="fas fa-globe"></i> Développement web</h3>
-                       
-                        <div class="skill-percentages">
-                            <div class="skill-item">
-                                <span>HTML/CSS</span>
-                                <div class="progress-bar">
-                                    <div class="progress" data-percent="90">0%</div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <span>JavaScript</span>
-                                <div class="progress-bar">
-                                    <div class="progress" data-percent="75">0%</div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <span>PHP</span>
-                                <div class="progress-bar">
-                                    <div class="progress" data-percent="80">0%</div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <span>React</span>
-                                <div class="progress-bar">
-                                    <div class="progress" data-percent="70">0%</div>
-                                </div>
-                            </div>
-                        </div>
+                        <h3><i class="fas fa-globe"></i> Frontend & Mobile</h3>
+                        <div class="skill-item"><span>React.js / Next.js</span><div class="progress-bar"><div class="progress" data-percent="80"></div></div></div>
+                        <div class="skill-item"><span>JavaScript (ES6+)</span><div class="progress-bar"><div class="progress" data-percent="85"></div></div></div>
+                        <div class="skill-item"><span>HTML5/CSS3/Tailwind</span><div class="progress-bar"><div class="progress" data-percent="90"></div></div></div>
+                        <div class="skill-item"><span>Flutter</span><div class="progress-bar"><div class="progress" data-percent="65"></div></div></div>
                     </div>
                     <div class="skill-card fade-in">
-                        <h3><i class="fas fa-server"></i> Backend & SGBD</h3>
-                       
-                        <div class="skill-percentages">
-                            <div class="skill-item">
-                                <span>MySQL</span>
-                                <div class="progress-bar">
-                                    <div class="progress" data-percent="85">0%</div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <span>PostgreSQL</span>
-                                <div class="progress-bar">
-                                    <div class="progress" data-percent="70">0%</div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <span>MVC</span>
-                                <div class="progress-bar">
-                                    <div class="progress" data-percent="80">0%</div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <span>API REST</span>
-                                <div class="progress-bar">
-                                    <div class="progress" data-percent="65">0%</div>
-                                </div>
-                            </div>
-                        </div>
+                        <h3><i class="fas fa-server"></i> SGBD & DevOps</h3>
+                        <div class="skill-item"><span>MySQL / PostgreSQL</span><div class="progress-bar"><div class="progress" data-percent="85"></div></div></div>
+                        <div class="skill-item"><span>MongoDB</span><div class="progress-bar"><div class="progress" data-percent="70"></div></div></div>
+                        <div class="skill-item"><span>Git & GitHub</span><div class="progress-bar"><div class="progress" data-percent="80"></div></div></div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION STATISTIQUES AVEC LIENS DE CERTIFICATION -->
+        <!-- STATISTIQUES -->
         <section id="statistiques" class="section statistiques">
             <div class="container">
-                <h2 class="section-title fade-in"><i class="fas fa-chart-line"></i> Quelques chiffres</h2>
+                <h2 class="section-title fade-in"><i class="fas fa-chart-simple"></i> Chiffres clés</h2>
                 <div class="stats-grid">
-                    <div class="stat-card fade-in">
-                        <i class="fas fa-code-branch"></i>
-                        <div class="stat-number" data-target="5">0</div>
-                        <p>Projets académiques</p>
-                    </div>
-                    <div class="stat-card fade-in">
-                        <i class="fas fa-briefcase"></i>
-                        <div class="stat-number" data-target="1">0</div>
-                        <p>Projets professionnels</p>
-                    </div>
-                    <div class="stat-card fade-in">
-                        <i class="fas fa-clock"></i>
-                        <div class="stat-number" data-target="1">0</div>
-                        <p>Années d'expérience</p>
-                    </div>
-                    <div class="stat-card fade-in certification-card">
-                        <i class="fas fa-certificate"></i>
-                        <div class="stat-number" data-target="1">0</div>
-                        <p>Certifications</p>
-                      
-                   
-                    </div>
+                    <div class="stat-card fade-in"><i class="fas fa-laptop-code"></i><div class="stat-number" data-target="8">0</div><p>Projets réalisés</p></div>
+                    <div class="stat-card fade-in"><i class="fas fa-briefcase"></i><div class="stat-number" data-target="3">0</div><p>Projets professionnels</p></div>
+                    <div class="stat-card fade-in"><i class="fas fa-certificate"></i><div class="stat-number" data-target="2">0</div><p>Certifications</p></div>
+                    <div class="stat-card fade-in"><i class="fas fa-clock"></i><div class="stat-number" data-target="2">0</div><p>Années d'XP</p></div>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION FORMATION -->
+        <!-- FORMATION -->
         <section id="formation" class="section formation">
             <div class="container">
                 <h2 class="section-title fade-in"><i class="fas fa-graduation-cap"></i> Formation</h2>
                 <div class="formation-grid">
-                    <div class="formation-card fade-in">
-                        <div class="formation-year">2024 - 2025</div>
-                        <h3>Deuxième année de Licence</h3>
-                        <p class="formation-school">École de Management et d'Innovation Technologique (EMI), Fianarantsoa</p>
-                        <p class="formation-desc">Spécialisation en développement d'applications Intranet/Internet.</p>
-                    </div>
-                    <div class="formation-card fade-in">
-                        <div class="formation-year">2023 - 2024</div>
-                        <h3>Première année de Licence</h3>
-                        <p class="formation-school">École de Management et d'Innovation Technologique (EMI), Fianarantsoa</p>
-                        <p class="formation-desc">Tronc commun en management et technologies.</p>
-                    </div>
+                    <div class="formation-card fade-in"><div class="formation-year">2023 - 2024</div><h3>Licence 1 - INFORMATIQUE</h3><p class="formation-school">EMIT Fianarantsoa</p><p class="formation-desc">Developpement d'Application Intranet et Internet</p></div>
+                    <div class="formation-card fade-in"><div class="formation-year">2024 - 2025</div><h3>Licence 2 - INFORMATIQUE</h3><p class="formation-school">EMIT Fianarantsoa</p><p class="formation-desc">Developpement d'Application Intranet et Internet</p></div>
+                      <div class="formation-card fade-in"><div class="formation-year">2025 - 2026</div><h3>Licence 3 - INFORMATIQUE</h3><p class="formation-school">EMIT Fianarantsoa</p><p class="formation-desc">Developpement d'Application Intranet et Internet</p></div>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION PROJETS -->
+        <!-- PROJETS : ACADÉMIQUES & PROFESSIONNELS -->
         <section id="projets" class="section projets">
             <div class="container">
-                <h2 class="section-title fade-in"><i class="fas fa-laptop-code"></i> Projets académiques & professionnels</h2>
-                <div class="projets-grid">
-                    <!-- Projet 1 - Gestion bancaire (Java) -->
-                    <div class="projet-card fade-in">
-                        <div class="card-header">
-                            <h3>Gestion bancaire</h3>
-                            <span class="date">Mai 2025</span>
-                        </div>
-                        <p class="techs">Java, Swing, MySQL, POO</p>
-                        <ul>
-                            <li>Comptes, dépôt/retrait, historique</li>
-                            <li>Impression reçu, gestion exceptions</li>
-                        </ul>
+                <h2 class="section-title fade-in"><i class="fas fa-project-diagram"></i> Projets académiques & professionnels</h2>
+                
+                <!-- SECTION PROJETS ACADÉMIQUES -->
+                <div class="projet-category">
+                    <h3 class="category-title"><i class="fas fa-university"></i> Projets Académiques</h3>
+                    <div class="projets-grid">
+                        <!-- Gestion cabinet avocat - Full JS -->
+                        <div class="projet-card"><div class="card-header"><h3>Cabinet Avocat</h3><span class="date">2025</span></div><p class="techs">JavaScript (Node.js, Express), MongoDB, HTML/CSS</p><ul><li>Gestion clients, dossiers, rendez-vous</li><li>Tableau de bord statistiques, authentification JWT</li><li>Interface full JS moderne</li></ul></div>
+                        <!-- Gestion emploi temps ASP.NET -->
+                        <div class="projet-card"><div class="card-header"><h3>Gestion emploi du temps</h3><span class="date">2025</span></div><p class="techs">ASP.NET Core MVC, SQL Server, Bootstrap</p><ul><li>Planification des salles et professeurs</li><li>Génération automatique d'emploi du temps</li><li>CRUD avec Entity Framework</li></ul></div>
+                        <!-- Plateforme suivi étudiant Spring Boot -->
+                        <div class="projet-card"><div class="card-header"><h3>Suivi Éudiant</h3><span class="date">2025</span></div><p class="techs">Spring Boot, Thymeleaf, MySQL</p><ul><li>Notes, absences, relevés personnalisés</li><li>Professeurs/élèves avec rôles Spring Security</li><li>Architecture micro-service simplifiée</li></ul></div>
                     </div>
-                    <!-- Projet 2 - Cabinet d'avocat (C#) -->
-                    <div class="projet-card fade-in">
-                        <div class="card-header">
-                            <h3>Cabinet d'avocat</h3>
-                            <span class="date">Mars 2025</span>
-                        </div>
-                        <p class="techs">C#, WinForms, .NET</p>
-                        <ul>
-                            <li>Dossiers clients, rendez-vous</li>
-                            <li>Facturation</li>
-                        </ul>
-                    </div>
-                    <!-- Projet 3 - Site web avocat -->
-                    <div class="projet-card fade-in">
-                        <div class="card-header">
-                            <h3>Site web avocat</h3>
-                            <span class="date">Avril 2025</span>
-                        </div>
-                        <p class="techs">PHP, MySQL, HTML/CSS, JS</p>
-                        <ul>
-                            <li>CRUD complet, archives, graphiques</li>
-                            <li>Formulaires dynamiques</li>
-                        </ul>
-                    </div>
-                    <!-- Projet 4 - Gestion d'Inventaire IT -->
-                    <div class="projet-card fade-in">
-                        <div class="card-header">
-                            <h3>Gestion d'Inventaire IT</h3>
-                            <span class="date">Juin 2025</span>
-                        </div>
-                        <p class="techs">React, Express.js, MongoDB</p>
-                        <ul>
-                            <li>Inventaire matériel et logiciel</li>
-                            <li>Attribution des équipements</li>
-                            <li>Tableau de bord en temps réel</li>
-                        </ul>
-                    </div>
-                    <!-- Projet 5 - Plateforme suivi étudiant -->
-                    <div class="projet-card fade-in">
-                        <div class="card-header">
-                            <h3>Suivi étudiant</h3>
-                            <span class="date">Juillet 2025</span>
-                        </div>
-                        <p class="techs">Flutter, PostgreSQL</p>
-                        <ul>
-                            <li>Suivi des notes et présences</li>
-                            <li>Communication professeur-étudiant</li>
-                            <li>Statistiques de progression</li>
-                        </ul>
-                    </div>
-                    <!-- Projet 6 - Gestion compte bancaire Spring Boot -->
-                    <div class="projet-card fade-in">
-                        <div class="card-header">
-                            <h3>Gestion compte bancaire</h3>
-                            <span class="date">Août 2025</span>
-                        </div>
-                        <p class="techs">Spring Boot, React, Bootstrap</p>
-                        <ul>
-                            <li>API RESTful avec Spring Security</li>
-                            <li>Frontend React avec Bootstrap</li>
-                            <li>Transactions et relevés bancaires</li>
-                        </ul>
+                </div>
+
+                <!-- SECTION PROJETS PROFESSIONNELS -->
+                <div class="projet-category" style="margin-top: 3rem;">
+                    <h3 class="category-title"><i class="fas fa-briefcase"></i> Projets Professionnels</h3>
+                    <div class="projets-grid">
+                        <!-- Gestion matériel Fullstack JS -->
+                        <div class="projet-card"><div class="card-header"><h3>Gestion Matériel IT</h3><span class="date">Stage 2025</span></div><p class="techs">React, Node.js, Express, MongoDB</p><ul><li>Inventaire complet (matériel/logiciel)</li><li>Attribution et suivi des équipements</li><li>Dashboard temps réel avec Socket.io</li></ul></div>
+                        <!-- Gestion scolaire - Laravel backend -->
+                        <div class="projet-card"><div class="card-header"><h3>Gestion Scolaire</h3><span class="date">Projet pro</span></div><p class="techs">Laravel (backend), MySQL, API REST</p><ul><li>Inscription en ligne, génération factures</li><li>Frais scolarité, pointage présence</li><li>Bulletins PDF, export Excel, dashboard responsable</li></ul></div>
+                        <!-- Gestion RH - Backend Laravel -->
+                        <div class="projet-card"><div class="card-header"><h3>Gestion RH</h3><span class="date">Alternance</span></div><p class="techs">Laravel, PostgreSQL, Livewire</p><ul><li>Gestion des employés, contrats, congés</li><li>Paie et rapports analytiques</li><li>API pour intégration avec outils externes</li></ul></div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION CONTACT AVEC RÉSEAUX ACTIFS -->
+        <!-- CONTACT + RÉSEAUX -->
         <section id="contact" class="section contact">
             <div class="container">
-                <h2 class="section-title fade-in"><i class="fas fa-address-card"></i> Contact</h2>
-                <div class="contact-flex fade-in">
-                    <div class="contact-info">
-                        <p><i class="fas fa-phone-alt"></i> +261 38 38 466 60</p>
-                        <p><i class="fas fa-envelope"></i> narindraTsiry18@gmail.com</p>
-                        <p><i class="fas fa-map-marker-alt"></i> III x 79 Anosibe Ouest II, Tana IV</p>
-                    </div>
-                    <div class="contact-social">
-                        <p>Disponible pour stage / alternance</p>
-                        <div class="social-links">
-                            <a href="https://github.com/Narindratsiry-218I24" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/narindra-tsiriniaina-698b90303/" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        </div>
-                    </div>
+                <h2 class="section-title fade-in"><i class="fas fa-paper-plane"></i> Contact & Réseaux</h2>
+                <div class="contact-flex">
+                    <div class="contact-info"><p><i class="fas fa-phone-alt"></i> +261 38 38 466 60</p><p><i class="fas fa-envelope"></i> narindraTsiry18@gmail.com</p><p><i class="fas fa-map-marker-alt"></i> Fianarantsoa, Madagascar</p></div>
+                    <div class="contact-social"><p>Disponible pour stage / alternance</p><div class="social-links"><a href="https://www.linkedin.com/in/narindra-tsiriniaina-698b90303/" class="social-link" target="_blank"><i class="fab fa-github"></i></a><a href="https://github.com/Narindratsiry-218I24" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a><a href="#" class="social-link"><i class="fab fa-twitter"></i></a></div></div>
                 </div>
             </div>
         </section>
     </main>
+    <footer><p>© 2026 Narindra Tsiriniaina Rakotondramnana </p></footer>
 
-    <footer>
-        <p>© 2025 Narindra Tsiriniaina Rakotondramnana · portfolio évolutif</p>
-    </footer>
-
-    <!-- Script amélioré pour animations et compteur -->
     <script>
-        // === MENU BURGER ===
+        // Menu burger
         const hamburger = document.getElementById('hamburger');
         const navMenu = document.getElementById('nav-menu');
-
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
-
+        hamburger.addEventListener('click', () => { hamburger.classList.toggle('active'); navMenu.classList.toggle('active'); });
         document.querySelectorAll('.nav-link').forEach(link => {
             link.addEventListener('click', (e) => {
                 e.preventDefault();
-                const targetId = link.getAttribute('href').substring(1);
-                const targetSection = document.getElementById(targetId);
-                if (targetSection) {
-                    window.scrollTo({
-                        top: targetSection.offsetTop - 70,
-                        behavior: 'smooth'
-                    });
-                }
-                hamburger.classList.remove('active');
-                navMenu.classList.remove('active');
+                const target = document.querySelector(link.getAttribute('href'));
+                if(target) window.scrollTo({ top: target.offsetTop - 70, behavior: 'smooth' });
+                hamburger.classList.remove('active'); navMenu.classList.remove('active');
             });
         });
 
-        // === ANIMATION AU SCROLL AMÉLIORÉE ===
-        const animatedElements = document.querySelectorAll('.fade-in');
+        // Scroll animations
+        const fadeElements = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver((entries) => { entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold: 0.15 });
+        fadeElements.forEach(el => observer.observe(el));
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, { threshold: 0.15, rootMargin: '0px 0px -30px 0px' });
-
-        animatedElements.forEach(el => observer.observe(el));
-
-        // === SURVEILLANCE DU MENU ===
+        // Active nav link
         window.addEventListener('scroll', () => {
-            let current = '';
-            const sections = document.querySelectorAll('section');
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop - 80;
-                if (scrollY >= sectionTop) {
-                    current = section.getAttribute('id');
-                }
-            });
-            document.querySelectorAll('.nav-link').forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href').substring(1) === current) {
-                    link.classList.add('active');
-                }
-            });
+            let current = ''; document.querySelectorAll('section').forEach(section => { if(window.scrollY >= section.offsetTop - 100) current = section.getAttribute('id'); });
+            document.querySelectorAll('.nav-link').forEach(link => { link.classList.remove('active'); if(link.getAttribute('href').substring(1) === current) link.classList.add('active'); });
         });
 
-        // === COMPTEUR STATISTIQUES ===
+        // Counters stats
         const statNumbers = document.querySelectorAll('.stat-number');
         let counted = false;
-
-        const countObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting && !counted) {
-                    counted = true;
-                    statNumbers.forEach(stat => {
-                        const target = parseInt(stat.getAttribute('data-target'));
-                        let current = 0;
-                        const increment = target / 40;
-                        const timer = setInterval(() => {
-                            current += increment;
-                            if (current >= target) {
-                                stat.innerText = target;
-                                clearInterval(timer);
-                            } else {
-                                stat.innerText = Math.floor(current);
-                            }
-                        }, 20);
-                    });
-                }
-            });
+        const countObs = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if(entry.isIntersecting && !counted) { counted = true; statNumbers.forEach(stat => { const target = parseInt(stat.dataset.target); let current = 0; const inc = target / 45; const timer = setInterval(() => { current += inc; if(current >= target) { stat.innerText = target; clearInterval(timer); } else stat.innerText = Math.floor(current); }, 20); }); } });
         }, { threshold: 0.5 });
+        if(statNumbers.length) countObs.observe(document.querySelector('#statistiques'));
 
-        if (statNumbers.length > 0) {
-            countObserver.observe(document.querySelector('#statistiques'));
-        }
-
-        // === ANIMATION DES BARRES DE PROGRESSION ===
-        const skillCards = document.querySelectorAll('.skill-card');
-
+        // Progress bars animation
         const skillObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const card = entry.target;
-                    const progressBars = card.querySelectorAll('.progress');
-                    
-                    progressBars.forEach(bar => {
-                        const percent = bar.getAttribute('data-percent');
-                        bar.style.width = percent + '%';
-                        bar.textContent = percent + '%';
-                    });
-                }
-            });
+            entries.forEach(entry => { if(entry.isIntersecting) { const bars = entry.target.querySelectorAll('.progress'); bars.forEach(bar => { const percent = bar.getAttribute('data-percent'); bar.style.width = percent + '%'; bar.textContent = percent + '%'; }); } });
         }, { threshold: 0.3 });
-
-        skillCards.forEach(card => skillObserver.observe(card));
+        document.querySelectorAll('.skill-card').forEach(card => skillObserver.observe(card));
     </script>
 </body>
 </html>
